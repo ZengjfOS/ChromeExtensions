@@ -1,0 +1,21 @@
+<!DOCTYPE html>
+<html data-ng-app>
+  <head>
+    <script src="js/angular.min.js"></script>
+    <script src="js/options.js"></script>
+  </head>
+  <body>
+    <input type="text" data-ng-model="username" placeholder="Username" /> {{ username }}
+    <div data-ng-init="pets=['Dog', 'Cat', 'Rabbit', 'Parrot']">
+      <ul>
+        <li data-ng-repeat="name in pets">{{ name }}</li>
+      </ul>
+    </div>
+    <hr />
+    <div data-ng-init="petsKV=[{name: 'Dog'}, {name: 'Cat'}, {name: 'Rabbit'}, {name: 'Parrot'}]">
+      <ul>
+        <li data-ng-repeat="pet in petsKV | orderBy:'name'">{{ pet.name | uppercase }}</li>
+      </ul>
+    </div>
+  </body>
+</html>

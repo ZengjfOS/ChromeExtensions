@@ -1,0 +1,24 @@
+{
+  // 参考书籍：
+  //     http://www.ituring.com.cn/book/miniarticle/60212
+  "name": "AngularJS",
+  "version": "1.0",
+  "description": "Build an Extension!",
+  "author": "zengjf",
+  "icons": {
+    "16": "images/icon_16x16.png"
+  },
+  // 浏览器右上角显示的icon和UI界面
+  "browser_action": {
+    "default_icon": "images/icon.png"
+  },
+  // 带选项页面的扩展
+  // http://www.ituring.com.cn/book/miniarticle/60271
+  "options_page": "options.html",
+  // 跨域访问权限设置
+  // http://www.ituring.com.cn/book/miniarticle/60221
+  "permissions": [
+    "http://cdn.static.runoob.com/libs/angular.js/1.4.6/"
+  ],
+  "manifest_version": 2
+}
