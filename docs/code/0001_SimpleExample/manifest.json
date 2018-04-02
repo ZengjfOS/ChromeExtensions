@@ -1,0 +1,37 @@
+{
+  // 参考书籍：
+  //     http://www.ituring.com.cn/book/miniarticle/60212
+  "name": "Getting Started Example",
+  "version": "1.0",
+  "description": "Build an Extension!",
+  "author": "zengjf",
+  // 浏览器右上角显示的icon和UI界面
+  "browser_action": {
+    "default_icon": "images/icon.png",
+    "default_title": "ZengjfOS",
+    "default_popup": "popup.html"
+  },
+  // 常驻后台
+  // http://www.ituring.com.cn/book/miniarticle/60242
+  "background": {
+    "scripts": ["js/status.js"],
+    "persistent": false
+  },
+  // 定义了一个匹配规则，当URL符合*://www.google.com/规则的时候，就将js/cannot_touch.js注入到页面中。
+  // http://www.ituring.com.cn/book/miniarticle/60212
+  "content_scripts": [
+    {
+      "matches": ["*://www.google.com/"],
+      "js": ["js/popup.js"]
+    }
+  ],
+  // 带选项页面的扩展
+  // http://www.ituring.com.cn/book/miniarticle/60271
+  "options_page": "options.html",
+  // 跨域访问权限设置
+  // http://www.ituring.com.cn/book/miniarticle/60221
+  "permissions": [
+    "http://sneezryworks.sinaapp.com/ip.php"
+  ],
+  "manifest_version": 2
+}
