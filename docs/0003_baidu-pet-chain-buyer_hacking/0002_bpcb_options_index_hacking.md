@@ -3,13 +3,13 @@
 这里主要是看布局采用的bootstrap来做的。
 
 * `js/index.js`: 跳转到buy页面
-  ```
+  ```Javascript
   $(function(){
       window.location.href = 'buy.html'
   });
   ```
 * `js/options.js`: options本身就是设置选项的意思，所以这里面倾向于设置选项
-  ```
+  ```Javascript
       /**
        * defaultDegreeConf: [{
        *     desc: '普通',
