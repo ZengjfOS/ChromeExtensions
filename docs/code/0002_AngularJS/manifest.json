@@ -8,6 +8,9 @@
   "icons": {
     "16": "images/icon_16x16.png"
   },
+  "background": {
+    "scripts": ["js/jquery.min.js", "js/background.js"]
+  },
   // 浏览器右上角显示的icon和UI界面
   "browser_action": {
     "default_icon": "images/icon.png"
