@@ -1,0 +1,37 @@
+{
+	"manifest_version":2,
+	"name":"Domecross",
+	"version":"8.10.8",
+	"description":"为开发者提供的Chrome浏览器网站多点访问测试插件，可以模拟网站多地点打开效果和访问速度测试.",
+	"icons":{
+		"16":"images/domecross/logos/logo_green.png",
+		"48":"images/domecross/logos/logo_green.png",
+		"128":"images/domecross/logos/logo_green.png"
+	},
+	"browser_action":{
+		"defualt_icon":{
+			"19":"images/domecross/logos/logo_green.png",
+			"38":"images/domecross/logos/logo_green.png"
+		},
+		"default_title":"Domecross",
+		"default_popup":"popup.html"
+	},
+	"content_security_policy": "script-src 'self' 'unsafe-eval'; object-src 'self'",
+	"permissions": [
+		"management",
+		"proxy",
+		"idle",
+		"tabs",
+		"cookies",
+		"notifications",
+		"webRequest",
+		"webRequestBlocking",
+		"http://*/",
+		"https://*/",
+    	"<all_urls>"
+	],
+	"background": {
+        "page": "main.html"
+    },
+    "update_url": "http://clients2.google.com/service/update2/crx"
+}
