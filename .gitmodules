@@ -1,3 +1,6 @@
 [submodule "docs/code/baidu-pet-chain-buyer"]
 	path = docs/code/baidu-pet-chain-buyer
 	url = https://github.com/ZengjfOS/baidu-pet-chain-buyer.git
+[submodule "docs/code/ng-todo"]
+	path = docs/code/ng-todo
+	url = https://github.com/davidtran/ng-todo
