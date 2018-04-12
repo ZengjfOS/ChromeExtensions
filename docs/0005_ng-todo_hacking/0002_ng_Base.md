@@ -73,7 +73,7 @@ app.controller('myCtrl', function($scope) {
 * 所有的应用都有一个 $rootScope，它可以作用在 ng-app 指令包含的所有 HTML 元素中。
 * $rootScope 可作用于整个应用中。是各个 controller 中 scope 的桥梁。用 rootscope 定义的值，可以在各个 controller 中使用。
 
-```
+```HTML
 <div ng-app="myApp" ng-controller="myCtrl">
 
 <h1>{{lastname}} 家族成员:</h1>
@@ -113,7 +113,7 @@ app.controller('myCtrl', function($scope, $rootScope) {
 * `ng-click`: 指令定义了 AngularJS 点击事件。
 * `ng-hide`: 指令用于设置应用部分是否可见。
 
-```
+```HTML
 <div ng-app="myApp" ng-controller="personCtrl">
 
 <button ng-click="toggle()">隐藏/显示</button>
